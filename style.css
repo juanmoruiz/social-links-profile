@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --white: #fff;
+    --green-color: #c5f82a;
+    --background-body: #141414;
+    --background-profile: #1f1f1f;
+    --background-link: #333333;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background-color: var(--background-body);
+    color: var(--white);
+}
+
+.profile {
+    width: 250px;
+    background-color: var(--background-profile);
+    border-radius: 15px;
+    padding: 40px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profile__img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.profile__data {
+    margin: 30px;
+    line-height: 8px;
+}
+
+.data__name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.data__ubication {
+    font-size: 12px;
+    color: var(--green-color);
+    font-weight: 700;
+}
+
+.profile__description {
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 400;
+}
+
+.profile__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--background-link);
+    padding: 10px 0;
+    margin-top: 12px;
+    border-radius: 6px;
+}
+
+a:hover {
+    background-color: var(--green-color);
+    color: var(--background-link);
+}
